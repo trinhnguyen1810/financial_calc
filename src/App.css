@@ -4,4 +4,22 @@
   padding: 2rem;
 }
 
+.container {
+  max-width: 800px;
+  margin: auto;
+}
 
+header h1 {
+  color: #007bff;
+}
+
+h2 {
+  color: #28a745;
+}
+
+section {
+  border: 1px solid #dee2e6;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}

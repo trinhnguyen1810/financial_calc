@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AddBudgetGoals.css'; 
 
 const AddBudgetGoals = () => {
     const [savingsPercentage, setSavingsPercentage] = useState(0);
@@ -14,8 +15,8 @@ const AddBudgetGoals = () => {
     };
 
     return (
-        <div>
-            <div>
+        <div className="budget-goals-container">
+            <div className="savings-input">
                 <label>Savings: </label>
                 <input
                     type="range"
@@ -25,12 +26,14 @@ const AddBudgetGoals = () => {
                     onChange={handleSavingsChange}
                 />
                 <span>{savingsPercentage}%</span>
-                <button onClick={() => setSavingsPercentage(50)}>Maximize</button>
+                <button className="btn btn-primary" onClick={() => setSavingsPercentage(50)}>
+                    Maximize
+                </button>
             </div>
 
-            <div>
+            <div className="city-selection">
                 <label>Insert City: </label>
-                <select value={selectedCity} onChange={handleCityChange}>
+                <select className="form-select" value={selectedCity} onChange={handleCityChange}>
                     <option value="">Select a city</option>
                     <option value="Hyderabad">Hyderabad</option>
                     <option value="Seoul">Seoul</option>

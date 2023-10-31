@@ -1,21 +1,22 @@
 import React from 'react';
+import './Output.css'; 
 
 const RecommendedExpenseItem = ({ label, value }) => (
-    <div>
+    <div className="recommended-expense-item">
         <label>{label}: </label>
         <span>${value}</span>
     </div>
 );
 
 const RecommendedFixedExpenseItem = ({ label, value }) => (
-    <div>
+    <div className="recommended-expense-item">
         <label>{label}: </label>
         <span>${value}</span>
     </div>
 );
 
 const OutputRecommendation = () => {
-    const recommendedGroceries = 200; // Replace with actual recommended values
+    const recommendedGroceries = 200;
     const recommendedTransportation = 150;
     const recommendedEntertainment = 50;
     const recommendedHealthFitness = 30;
@@ -24,7 +25,7 @@ const OutputRecommendation = () => {
     const recommendedOtherExpenses = 100;
 
     return (
-        <div>
+        <div className="output-container">
             <h2>Output: Budget Allocation</h2>
 
             <RecommendedExpenseItem label="Recommended Groceries/Food" value={recommendedGroceries} />
