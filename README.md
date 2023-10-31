@@ -37,8 +37,7 @@ To start the development server:
 npm run dev
 ```
 
-
-
+The app will run on http://127.0.0.1:5173/.
 
 
 
